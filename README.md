@@ -1,4 +1,5 @@
 ## Build Setup Testing
+### Live: https://shop.foxfinance.io/
 ```bash
 # create .env file locally from development.env
 $ cp development.env .env

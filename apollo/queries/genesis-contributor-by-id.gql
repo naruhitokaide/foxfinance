@@ -1,0 +1,8 @@
+query GenesisContributors($id: String!) {
+  genesisContributors(where: {contributor: $id}) {
+    contributor
+    totalContribtuionInWei
+    firstContributedTimestamp
+    lastContributedTimestamp
+  }
+}

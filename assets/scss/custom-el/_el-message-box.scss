@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .el-message-box {
+      width: 80%!important;
+      .el-button {
+        &--primary {
+            display: none;
+        }          
+      }      
+    }
+}

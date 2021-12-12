@@ -1,0 +1,66 @@
+body {
+  scroll-behavior: smooth;
+  scroll-padding: 30px;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url('/img/fox-finance/background.jpg') no-repeat fixed top center;
+  background-color: #131232 !important;
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+
+* {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 36px !important;
+  font-weight: 400;
+}
+
+div,
+p {
+  color: white;
+}
+
+p {
+  font-size: 18px;
+}
+
+#heroSection,
+#navMargin {
+  margin-top: 100px;
+}
+
+.el-message-box__message, p {
+  color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+  #app {
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
+      url('/img/fox-finance/background-mobile.jpg') repeat fixed top center;
+    background-color: #131232 !important;
+  }
+
+  #heroSection,
+  #navMargin {
+    margin-top: 85px;
+  }
+}

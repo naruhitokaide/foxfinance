@@ -1,0 +1,72 @@
+@import "./el-checkbox";
+@import "./el-input";
+@import "./el-message-box";
+@import "./el-element";
+
+.v-modal {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.el-dialog {
+  border-radius: 0;
+  box-shadow: 0px 20px 60px rgba($color-black, 0.15);
+  color: $color-grey-dark;
+  &__header {
+    padding: 48px;
+    padding-bottom: 48px;
+  }
+  &__title {
+    font-family: $font-inter;
+    font-weight: $fw-black;
+    font-size: $f4;
+    color: $color-grey-dark;
+  }
+  &__headerbtn {
+    top: 32px;
+    right: 32px;
+    .el-dialog {
+      &__close {
+        color: $color-black;
+        font-weight: $fw-bold;
+      }
+    }
+  }
+}
+
+.el-input-number {
+  .el-input {
+    input {
+      border-radius: 0;
+      border-color: $color-mercury-2;
+    }
+  }
+  &__increase, &__decrease {
+    background: none;
+    border-radius: 0;
+    border: none !important;
+  }
+}
+
+.el-notification {
+  &__content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 640px) {
+  .el-dialog {
+    width: 90% !important;
+    margin-top: 20vh !important;
+    &__header {
+      padding: 20px;
+      font-size: $f7;
+    }
+    &__title {
+      font-size: $f5;
+    }
+    &__headerbtn {
+      top: 20px;
+      right: 20px;
+    }
+  }
+}

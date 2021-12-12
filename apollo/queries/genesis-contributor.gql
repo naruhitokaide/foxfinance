@@ -1,0 +1,8 @@
+query GenesisContributor {
+  genesisContributor {
+    contributor
+    totalContribtuionInWei
+    firstContributedTimestamp
+    lastContributedTimestamp
+  }
+}

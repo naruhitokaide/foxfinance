@@ -1,0 +1,22 @@
+mutation AddComment ($articleId: String!, $username: String!, $avatar: String!, $content: String!) {
+  addComment(articleId: $articleId, username: $username, avatar: $avatar, content: $content) {
+    id
+    article_id
+    user {
+      username
+      avatar
+    }
+    content
+    created_at
+    childrens {
+      id
+      comment_id
+      user {
+        username
+        avatar
+      }
+      content
+      created_at
+    }
+  }
+}

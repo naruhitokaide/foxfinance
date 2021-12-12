@@ -1,0 +1,126 @@
+// Import Bulma's core
+@import '~bulma/sass/utilities/_all.sass';
+// @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Raleway:wght@400;500;600;700;900&display=swap')
+// @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+// Set your colors
+$is-fox-primary: #FF8936;
+$is-fox-primary-text: white;
+$is-fox-primary-invert: findColorInvert($is-fox-primary);
+
+$is-fox-secondary: #222;
+$is-fox-secondary-text: #ffffff;
+$is-fox-secondary-invert: findColorInvert($is-fox-secondary);
+
+$is-secondary: #0093ee;
+$is-secondary-text: white;
+$is-secondary-invert: findColorInvert($is-secondary);
+
+$is-discord: #714DD2;
+$is-discord-text: white;
+$is-discord-invert: findColorInvert($is-discord);
+
+$is-reddit: #FF4500;
+$is-reddit-text: white;
+$is-reddit-invert: findColorInvert($is-reddit);
+
+$is-dexGuru: #546DD9;
+$is-dexGuru-text: white;
+$is-dexGuru-invert: findColorInvert($is-dexGuru);
+
+$is-coinGecko: #1cdd6f;
+$is-coinGecko-text: white;
+$is-coinGecko-invert: findColorInvert($is-coinGecko);
+
+$is-fox-font-sans: "Rubik";
+$is-fox-font-serif: "Bitter";
+$is-fox-font-sans-emphasis: 700;
+$is-fox-button-text: 500;
+
+
+$family-primary: $is-fox-font-sans;
+$family-secondary: $is-fox-font-serif;
+
+$is-small-fox-button-text-size: 16px;
+
+// .body-copy
+//       font-family: $is-fox-font-serif !important
+
+.strongest {
+    font-weight: $is-fox-font-sans-emphasis !important;
+}
+
+.button{
+    font-weight: $is-fox-button-text !important;
+}
+      
+.research button{
+      font-size: $is-small-fox-button-text-size !important;
+      padding-top: 8px;
+      padding-bottom: 8px
+} 
+
+#whyFoxBanner .body-copy, .timeline-content > .body-copy{
+    font-size: 16px !important;
+}
+      
+
+#whyFoxBanner .subheading, #tokenomicsSection .subheading, .timeline-content .heading{
+    font-size: 18px !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    color: $is-fox-primary !important;
+}
+      
+      
+
+.eyebrow, .timeline-content > .heading {
+    text-transform: uppercase !important;
+    font-weight: 800 !important;
+    color: $is-fox-primary !important;
+}
+      
+.eyebrow{
+    font-size: 16px !important;
+}
+      
+#tokenomicsSection .amount{
+    font-size: 20px !important;
+}
+
+.subheading-container{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    font-size: 16px !important;
+}
+
+.pullquote{
+    font-style: italic;
+    font-weight: 400 !important;
+}  
+
+.note{
+    font-size: 16px !important;
+}
+
+.directions .body-copy{
+    margin-left: 8px !important;
+}    
+
+.is-bio-icon{
+    font-size: 12px !important;
+}
+.timeline-content > .body-copy {
+    padding: 0px !important;
+}
+      
+
+// 5. Add new color variables to the color map.
+@import "~bulma/sass/utilities/derived-variables";
+$addColors: ("foxPrimary": ($is-fox-primary, $is-fox-primary-text, $is-fox-primary-invert,), "foxSecondary": ($is-fox-secondary, $is-fox-secondary-text, $is-fox-secondary-invert,), "secondary": ($is-secondary, $is-secondary-text, $is-secondary-invert,), "discord": ($is-discord, $is-discord-text, $is-discord-invert,), "reddit": ($is-reddit, $is-reddit-text, $is-reddit-invert,),"dexGuru": ($is-dexGuru, $is-dexGuru-text, $is-dexGuru-invert,), "coinGecko": ($is-coinGecko, $is-coinGecko-text, $is-coinGecko-invert));
+$colors: map-merge($colors, $addColors);
+
+// 6. Import the rest of Bulma
+@import "~bulma";

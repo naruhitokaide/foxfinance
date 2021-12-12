@@ -1,0 +1,13 @@
+query GetDetailArticle($id: ID!) {
+  getDetailArticle(articleId: $id) {
+    article_id
+    title
+    content
+    media {
+      url
+    }
+    source {
+      author
+    }
+  }
+}
